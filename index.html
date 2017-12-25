@@ -4,41 +4,46 @@
 	<meta charset="UTF-8">
 	<title>画板Palette</title>
 	<link rel="stylesheet" href="css/index.css">
-	<script src="function.js"></script>
-	<script src="index.js"></script>
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<script src="palette.js"></script>
 </head>
 <body>
 	<header>
 		<ul class="operate">
-			<li>新建</li>
-			<li>保存</li>
-			<li id="revocation">撤销</li>
-			<li>退出</li>
+			<li id="newc"><i class="iconfont icon-add"></i></li>
+			<a href=""><i class="iconfont icon-baocun"></i></a>
+			<li id="revocation"><i class="iconfont icon-chexiao"></i></li>
+			<li id="clear"><i class="iconfont icon-qingkong"></i></li>
 		</ul>
 		<ul class="tool">
-			<li id="pencil">铅笔</li>
-			<li id="eraser">橡皮擦</li>
-			<li id="paint">油漆桶</li>
+			<li id="pencil"><i class="iconfont icon-qianbi1"></i></li>
+			<li id="eraser"><i class="iconfont icon-xiangpica"></i></li>
+			<li id="word"><i class="iconfont icon-jiandao"></i></li>
+			<li id="clipBtn"><i class="iconfont icon-wenzi"></i></li>
 		</ul>
 		<ul class="shape">
-			<li id="line">直线</li>
-			<li id="dotted">虚线</li>
-			<li id="rect">矩形</li>
-			<li id="circle">圆</li>
-			<li id="poly">多边形</li>
-			<li id="polygon">多角形</li>
+			<li id="line"><i class="iconfont icon-line"></i></li>
+			<li id="dotted"><i class="iconfont icon-xuxian"></i></li>
+			<li id="rect"><i class="iconfont icon-juxing"></i></li>
+			<li id="circle"><i class="iconfont icon-iconfontwancheng"></i></li>
+			<li id="poly"><i class="iconfont icon-duobianxing"></i></li>
+			<li id="polygon"><i class="iconfont icon-star01"></i></li>
 		</ul>
 		<ul class="style">
-			<li id="stroke">描边</li>
-            <li><input  id="color1" type="color"></li>
-            <li id="fill">填充</li>
-            <li><input id="color2" type="color"></li>
+			<li class="styleBtn" id="stroke"><i class="iconfont icon-qianbi"></i></li>
+            <li class="styleBtn"  id="fill"><i class="iconfont icon-tianchong"></i></li>
+            <li><i class="iconfont icon-cuxixiantiao"></i></li>
+            <li><input  id="strokeStyle" type="color"></li>
+            <li><input id="fillStyle" type="color"></li>
+            <li><input id="lineWidth" type="number"></li>
 		</ul>
 	</header>
 	<section>
-		<canvas width="800" height="500"></canvas>
+		<!-- <canvas width="800" height="500"></canvas> -->
 		<div class="mask"></div>
 		<div class="opacity"></div>
+		<div class="clip"></div>
 	</section>
 </body>
 </html>
+	<script src="index.js"></script>
