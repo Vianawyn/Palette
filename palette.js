@@ -195,6 +195,8 @@ class Palette{
     //裁切
     clip(clip){
         let that = this;
+        let era = document.querySelector('.mask');
+        era.style.display = 'none';
         let cut = document.querySelector('.clip');
         that.opacity.onmousedown = function(e){
             let ox = e.offsetX,oy = e.offsetY;
